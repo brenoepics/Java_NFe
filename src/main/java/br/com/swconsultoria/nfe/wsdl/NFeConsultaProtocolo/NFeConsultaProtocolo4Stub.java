@@ -798,7 +798,7 @@ public class NFeConsultaProtocolo4Stub extends org.apache.axis2.client.Stub {
                         if (fullTypeName != null) {
                             java.lang.String nsPrefix = null;
 
-                            if (fullTypeName.indexOf(":") > -1) {
+                            if (fullTypeName.contains(":")) {
                                 nsPrefix = fullTypeName.substring(0,
                                         fullTypeName.indexOf(":"));
                             }
@@ -1195,7 +1195,7 @@ public class NFeConsultaProtocolo4Stub extends org.apache.axis2.client.Stub {
                         if (fullTypeName != null) {
                             java.lang.String nsPrefix = null;
 
-                            if (fullTypeName.indexOf(":") > -1) {
+                            if (fullTypeName.contains(":")) {
                                 nsPrefix = fullTypeName.substring(0,
                                         fullTypeName.indexOf(":"));
                             }
