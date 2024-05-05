@@ -1003,7 +1003,7 @@ public class NFeAutorizacao4Stub extends org.apache.axis2.client.Stub {
             if (qnames != null) {
                 // we have to store this data until last moment since it is not possible to write any
                 // namespace data after writing the charactor data
-                StringBuffer stringToWrite = new StringBuffer();
+                StringBuilder stringToWrite = new StringBuilder();
                 String namespaceURI = null;
                 String prefix = null;
 
@@ -1400,7 +1400,7 @@ public class NFeAutorizacao4Stub extends org.apache.axis2.client.Stub {
             if (qnames != null) {
                 // we have to store this data until last moment since it is not possible to write any
                 // namespace data after writing the charactor data
-                StringBuffer stringToWrite = new StringBuffer();
+                StringBuilder stringToWrite = new StringBuilder();
                 String namespaceURI = null;
                 String prefix = null;
 
@@ -1805,7 +1805,7 @@ public class NFeAutorizacao4Stub extends org.apache.axis2.client.Stub {
             if (qnames != null) {
                 // we have to store this data until last moment since it is not possible to write any
                 // namespace data after writing the charactor data
-                StringBuffer stringToWrite = new StringBuffer();
+                StringBuilder stringToWrite = new StringBuilder();
                 String namespaceURI = null;
                 String prefix = null;
 
