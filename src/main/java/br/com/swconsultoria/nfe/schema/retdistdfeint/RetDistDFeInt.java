@@ -376,7 +376,7 @@ public class RetDistDFeInt {
          */
         public List<RetDistDFeInt.LoteDistDFeInt.DocZip> getDocZip() {
             if (docZip == null) {
-                docZip = new ArrayList<RetDistDFeInt.LoteDistDFeInt.DocZip>();
+                docZip = new ArrayList<>();
             }
             return this.docZip;
         }

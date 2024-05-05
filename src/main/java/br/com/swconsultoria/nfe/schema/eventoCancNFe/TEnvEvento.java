@@ -102,7 +102,7 @@ public class TEnvEvento {
      */
     public List<TEvento> getEvento() {
         if (evento == null) {
-            evento = new ArrayList<TEvento>();
+            evento = new ArrayList<>();
         }
         return this.evento;
     }

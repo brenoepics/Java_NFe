@@ -65,7 +65,7 @@ public class TransformType {
      */
     public List<String> getXPath() {
         if (xPath == null) {
-            xPath = new ArrayList<String>();
+            xPath = new ArrayList<>();
         }
         return this.xPath;
     }

@@ -607,7 +607,7 @@ public class TRetEvento {
          */
         public List<String> getChNFePend() {
             if (chNFePend == null) {
-                chNFePend = new ArrayList<String>();
+                chNFePend = new ArrayList<>();
             }
             return this.chNFePend;
         }

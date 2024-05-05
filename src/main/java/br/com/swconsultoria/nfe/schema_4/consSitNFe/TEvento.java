@@ -590,7 +590,7 @@ public class TEvento {
             @XmlAnyElement
             protected List<Element> any;
             @XmlAnyAttribute
-            private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+            private Map<QName, String> otherAttributes = new HashMap<>();
 
             /**
              * Gets the value of the any property.
@@ -616,7 +616,7 @@ public class TEvento {
              */
             public List<Element> getAny() {
                 if (any == null) {
-                    any = new ArrayList<Element>();
+                    any = new ArrayList<>();
                 }
                 return this.any;
             }

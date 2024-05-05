@@ -228,7 +228,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.portalfiscal.inf.br/nfe", name = "consSitNFe")
     public JAXBElement<TConsSitNFe> createConsSitNFe(TConsSitNFe value) {
-        return new JAXBElement<TConsSitNFe>(_ConsSitNFe_QNAME, TConsSitNFe.class, null, value);
+        return new JAXBElement<>(_ConsSitNFe_QNAME, TConsSitNFe.class, null, value);
     }
 
     /**
@@ -241,7 +241,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2000/09/xmldsig#", name = "Signature")
     public JAXBElement<SignatureType> createSignature(SignatureType value) {
-        return new JAXBElement<SignatureType>(_Signature_QNAME, SignatureType.class, null, value);
+        return new JAXBElement<>(_Signature_QNAME, SignatureType.class, null, value);
     }
 
 }

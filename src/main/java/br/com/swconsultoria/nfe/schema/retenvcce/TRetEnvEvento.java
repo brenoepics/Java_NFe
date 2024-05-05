@@ -242,7 +242,7 @@ public class TRetEnvEvento {
      */
     public List<TretEvento> getRetEvento() {
         if (retEvento == null) {
-            retEvento = new ArrayList<TretEvento>();
+            retEvento = new ArrayList<>();
         }
         return this.retEvento;
     }

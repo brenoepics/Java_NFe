@@ -91,7 +91,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.portalfiscal.inf.br/nfe", name = "retConsCad")
     public JAXBElement<TRetConsCad> createRetConsCad(TRetConsCad value) {
-        return new JAXBElement<TRetConsCad>(_RetConsCad_QNAME, TRetConsCad.class, null, value);
+        return new JAXBElement<>(_RetConsCad_QNAME, TRetConsCad.class, null, value);
     }
 
 }

@@ -120,7 +120,7 @@ public class Assinar {
     private static ArrayList<Transform> signatureFactory(XMLSignatureFactory signatureFactory)
             throws NoSuchAlgorithmException, InvalidAlgorithmParameterException {
 
-        ArrayList<Transform> transformList = new ArrayList<Transform>();
+        ArrayList<Transform> transformList = new ArrayList<>();
         Transform envelopedTransform = signatureFactory.newTransform(Transform.ENVELOPED, (TransformParameterSpec) null);
         Transform c14NTransform = signatureFactory.newTransform("http://www.w3.org/TR/2001/REC-xml-c14n-20010315", (TransformParameterSpec) null);
 
@@ -148,7 +148,7 @@ public class Assinar {
         privateKey = pkEntry.getPrivateKey();
 
         KeyInfoFactory keyInfoFactory = signatureFactory.getKeyInfoFactory();
-        List<X509Certificate> x509Content = new ArrayList<X509Certificate>();
+        List<X509Certificate> x509Content = new ArrayList<>();
 
         x509Content.add(CertificadoService.getCertificate(certificado, keyStore));
         X509Data x509Data = keyInfoFactory.newX509Data(x509Content);
