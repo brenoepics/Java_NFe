@@ -409,11 +409,11 @@ public class CadConsultaCadastro4Stub extends org.apache.axis2.client.Stub {
         if (opNameArray == null) {
             return false;
         }
-        for (int i = 0; i < opNameArray.length; i++) {
-            if (opName.equals(opNameArray[i])) {
-                return true;
-            }
-        }
+		    for (javax.xml.namespace.QName qName : opNameArray) {
+				    if (opName.equals(qName)) {
+						    return true;
+				    }
+		    }
         return false;
     }
 
