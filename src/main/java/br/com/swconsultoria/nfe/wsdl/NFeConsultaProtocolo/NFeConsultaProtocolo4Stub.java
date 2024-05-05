@@ -185,14 +185,14 @@ public class NFeConsultaProtocolo4Stub extends org.apache.axis2.client.Stub {
                     try {
                         java.lang.String exceptionClassName = (java.lang.String) faultExceptionClassNameMap.get(new org.apache.axis2.client.FaultMapKey(
                                     faultElt.getQName(), "nfeConsultaNF"));
-                        java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
+                        Class<?> exceptionClass = Class.forName(exceptionClassName);
                         java.lang.reflect.Constructor constructor = exceptionClass.getConstructor(java.lang.String.class);
                         java.lang.Exception ex = (java.lang.Exception) constructor.newInstance(f.getMessage());
 
                         //message class
                         java.lang.String messageClassName = (java.lang.String) faultMessageMap.get(new org.apache.axis2.client.FaultMapKey(
                                     faultElt.getQName(), "nfeConsultaNF"));
-                        java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
+                        Class<?> messageClass = Class.forName(messageClassName);
                         java.lang.Object messageObject = fromOM(faultElt,
                                 messageClass);
                         java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
@@ -305,7 +305,7 @@ public class NFeConsultaProtocolo4Stub extends org.apache.axis2.client.Stub {
                                     java.lang.String exceptionClassName = (java.lang.String) faultExceptionClassNameMap.get(new org.apache.axis2.client.FaultMapKey(
                                                 faultElt.getQName(),
                                                 "nfeConsultaNF"));
-                                    java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
+                                    Class<?> exceptionClass = Class.forName(exceptionClassName);
                                     java.lang.reflect.Constructor constructor = exceptionClass.getConstructor(java.lang.String.class);
                                     java.lang.Exception ex = (java.lang.Exception) constructor.newInstance(f.getMessage());
 
@@ -313,7 +313,7 @@ public class NFeConsultaProtocolo4Stub extends org.apache.axis2.client.Stub {
                                     java.lang.String messageClassName = (java.lang.String) faultMessageMap.get(new org.apache.axis2.client.FaultMapKey(
                                                 faultElt.getQName(),
                                                 "nfeConsultaNF"));
-                                    java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
+                                    Class<?> messageClass = Class.forName(messageClassName);
                                     java.lang.Object messageObject = fromOM(faultElt,
                                             messageClass);
                                     java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
